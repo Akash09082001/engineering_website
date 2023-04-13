@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-bottom: 80px;
+    flex-direction: column;
+}
+
+
+
+
+/* header section  */
+
+@media (max-width: 480px) {
+    header {
+        display: flex;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        background: #FFF;
+        box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    header .header-container1 {
+        display: flex;
+        padding: 10px 20px;
+        border-bottom: 1px solid grey;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .header-container1 .header-logo {
+        display: flex;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    header .header-container1 .header-menu {
+        display: flex;
+    }
+
+    header .header-container1 .header-menu button {
+        display: flex;
+        height: 35px;
+        width: 35px;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        background: transparent;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .header-container1 .header-menu button ion-icon {
+        display: flex;
+        font-size: 24px;
+    }
+
+    header .header-container2 {
+        display: flex;
+        width: 100%;
+    }
+
+    header .header-container2 .navbar {
+        display: flex;
+        width: auto;
+        overflow: scroll;
+    }
+
+    header .header-container2 .navbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    header .header-container2 .navbar ul {
+        display: flex;
+        width: auto;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    header .header-container2 .navbar ul li {
+        display: flex;
+        border-radius: 2px;
+        padding: 10px 10px;
+        margin: 0px 5px;
+    }
+
+    header .header-container2 .navbar ul li:hover {
+        background: #ff6600;
+    }
+
+    header .header-container2 .navbar ul li a {
+        display: flex;
+        text-decoration: none;
+        border-radius: 4px;
+        color: #191919;
+    }
+
+    header .header-container2 .navbar ul li:hover a {
+        color: #FFF;
+    }
+
+
+
+
+    /* fixed apply button  */
+
+    #apply-button {
+        display: flex;
+        width: 100%;
+        background: #fff;
+        position: fixed;
+        padding: 10px 10px;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #apply-button .form-btn {
+        display: flex;
+        width: 85%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #apply-button .form-btn .btn1 {
+        display: flex;
+        width: 95%;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+        border-radius: 6px;
+        outline: none;
+        font-size: 16px;
+        border: none;
+        color: #FFF;
+        font-weight: bold;
+        letter-spacing: 2px;
+        background: #ff6600;
+        transition: 0.1s;
+    }
+
+    #apply-button .form-btn .btn1:hover .shimmer {
+        transform: translate3d(120%, -100px, 0) rotate3d(0, 0, 1, 90deg);
+    }
+
+    #apply-button .form-btn .btn1 .shimmer {
+        position: absolute;
+        display: block;
+        background: rgba(255, 255, 255, 0.7);
+        width: 350px;
+        height: 100px;
+        transform: translate3d(-120%, -50px, 0) rotate3d(0, 0, 1, 45deg);
+        transition: all 2s;
+    }
+
+    #apply-button .whatsapp-btn {
+        display: flex;
+        width: 15%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #apply-button .whatsapp-btn .btn2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 7px;
+        border-radius: 6px;
+        outline: none;
+        font-size: 16px;
+        border: none;
+        background: transparent;
+    }
+
+    #apply-button .whatsapp-btn .btn2 ion-icon {
+        font-size: 30px;
+        color: limegreen;
+    }
+
+
+
+    /* hero section  */
+
+    #hero {
+        display: flex;
+        flex-direction: column;
+        margin-top: 95px;
+        width: 100%;
+        background-image: url(images/star.png);
+        background-position: top 30% right 20%;
+        background-size: 20% 20%;
+        background-repeat: no-repeat;
+        height: auto;
+        padding: 50px 10px 50px 10px;
+    }
+
+    #hero .hero-title {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0px 10px;
+        font-weight: 700;
+        margin: 0px;
+    }
+
+    #hero .hero-title .highlight-text {
+        display: flex;
+        height: auto;
+        width: fit-content;
+        margin: 2px 0px;
+        letter-spacing: 2px;
+        padding: 0px 10px;
+        background: #000;
+        color: #FFF;
+    }
+
+    #hero .hero-description {
+        display: flex;
+        margin: 30px 0px;
+        font-size: 16px;
+        line-height: 20px;
+
+    }
+
+    #hero .hero-dates {
+        display: flex;
+        font-weight: bold;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #hero .hero-dates span {
+        color: #ff6600;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+
+
+
+    /* Curriculum section  */
+
+    #curriculum {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 40px 20px;
+
+    }
+
+    #curriculum .curriculum-title {
+        display: flex;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 20px 0px;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #curriculum .curriculum-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 10px;
+        border: 1px solid #000;
+        border-radius: 10px;
+    }
+
+    #curriculum .curriculum-container .curriculum-container1 {
+        flex-direction: column;
+        display: flex;
+        width: 90%;
+        height: auto;
+    }
+
+    #curriculum .curriculum-container .curriculum-container1 .curriculum-head {
+        display: flex;
+        width: fit-content;
+        padding: 5px 10px;
+        margin: 10px 0px;
+        border-radius: 4px;
+        background: #ff6600;
+        color: #FFF;
+    }
+
+    #curriculum .curriculum-container .curriculum-container1 .curriculum-body {
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding: 10px 0px;
+    }
+
+    #curriculum .curriculum-container .curriculum-container1 .curriculum-body ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 0px 15px;
+    }
+
+    body {
+        margin-top: 20px;
+    }
+
+    .section_padding_130 {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
+
+    .faq_area {
+        position: relative;
+        z-index: 1;
+        background-color: #f5f5ff;
+    }
+
+    .faq-accordian {
+        position: relative;
+        z-index: 1;
+    }
+
+    .faq-accordian .card {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 1.5rem;
+    }
+
+    .faq-accordian .card:last-child {
+        margin-bottom: 0;
+    }
+
+    .faq-accordian .card .card-header {
+        background-color: #ffffff;
+        padding: 0;
+        border-bottom-color: #ebebeb;
+    }
+
+    .faq-accordian .card .card-header h6 {
+        cursor: pointer;
+        padding: 1.75rem 2rem;
+        color: #3f43fd;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -ms-grid-row-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .faq-accordian .card .card-header h6 span {
+        font-size: 1.5rem;
+    }
+
+    .faq-accordian .card .card-header h6.collapsed {
+        color: #070a57;
+    }
+
+    .faq-accordian .card .card-header h6.collapsed span {
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+
+    .faq-accordian .card .card-body {
+        padding: 1.75rem 2rem;
+    }
+
+    .faq-accordian .card .card-body p:last-child {
+        margin-bottom: 0;
+    }
+
+    @media only screen and (max-width: 575px) {
+        .support-button p {
+            font-size: 14px;
+        }
+    }
+
+    .support-button i {
+        color: #3f43fd;
+        font-size: 1.25rem;
+    }
+
+    @media only screen and (max-width: 575px) {
+        .support-button i {
+            font-size: 1rem;
+        }
+    }
+
+    .support-button a {
+        text-transform: capitalize;
+        color: #2ecc71;
+    }
+
+    @media only screen and (max-width: 575px) {
+        .support-button a {
+            font-size: 13px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+}
