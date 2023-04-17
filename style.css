@@ -1469,6 +1469,381 @@ header .header-container1 .form-btn .btn1 .shimmer {
 
 
 
+/* Future section  */
+
+
+#future {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 80px 120px;
+    flex-direction: column;
+}
+
+#future .future-title {
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-size: 35px;
+    padding: 10px 0px;
+    margin: 10px 0px 50px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+#future .future-title strong {
+    display: flex;
+    color: #ff6600;
+    margin-left: 20px;
+}
+
+#future .future-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#future .future-container .future-container1 {
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background: #FFF;
+    border-radius: 10px;
+}
+
+#future .future-container .future-container2 {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background: #FFF;
+    border-radius: 10px;
+}
+
+#future .future-container .future-container1 .future-heading,
+#future .future-container .future-container2 .future-heading {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#future .future-container .future-container1 .future-img,
+#future .future-container .future-container2 .future-img {
+    display: flex;
+    width: 100%;
+    height: 220px;
+    background: #000;
+    border: 1px solid red;
+}
+
+#future .future-container .future-container1 .future-img img,
+#future .future-container .future-container2 .future-img img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#future .future-container .future-container1 .future-link,
+#future .future-container .future-container2 .future-link {
+    display: flex;
+    width: 100%;
+    padding: 10px 0px;
+    margin: 10px 0px 0px 0px;
+}
+
+#future .future-container .future-container1 .future-link a,
+#future .future-container .future-container2 .future-link a {
+    color: #ff6600;
+    margin-left: 10px;
+}
+
+
+/* admission section css */
+
+#admission {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 120px 30px 120px;
+
+}
+
+#admission .admission-container1 {
+    display: flex;
+    width: 100%;
+    padding: 5px 10px;
+    margin: 10px 0px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#admission .admission-container1 .admission-details {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    padding: 20px 0px;
+}
+
+#admission .admission-container1 .admission-details .admission-heading {
+    display: flex;
+    width: fit-content;
+    padding: 5px 0px;
+    margin: 10px 0px;
+    border-radius: 4px;
+    /* background: #ff6600; */
+    color: #ff6600;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+#admission .admission-container1 .admission-details .admission-sub-heading {
+    font-size: 18px;
+}
+
+#admission .admission-container1 .admission-button {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    padding: 20px 0px;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+#admission .admission-container1 .admission-button button {
+    display: flex;
+    color: #fff;
+    background-color: #ff6600;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
+}
+
+#admission .admission-container1 .admission-button button:hover {
+    background-color: gray;
+}
+
+#admission .admission-container2 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+}
+
+#admission .admission-container2 ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+#admission .admission-container2 ul li {
+    display: flex;
+    width: auto;
+    align-items: center;
+    padding: 20px 10px;
+    margin: 10px 0px;
+}
+
+#admission .admission-container2 ul li .arrow {
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#admission .admission-container2 ul li .arrow span {
+    display: flex;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, #fff, #ff6600);
+}
+
+#admission .admission-container2 ul li .arrow ion-icon {
+    display: flex;
+    font-size: 30px;
+    margin-left: -20px;
+    color: #ff6600;
+}
+
+#admission .admission-container2 ul li ion-icon {
+    color: #ff6600;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+/* certificate section  */
+
+#certificate {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 120px 80px 120px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#certificate .certificate-title {
+    display: flex;
+    width: 100%;
+    padding: 5px 0px;
+    margin: 10px 0px 30px 0px;
+    color: #ff6600;
+    font-weight: bold;
+    font-size: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+#certificate .certificate-container {
+    display: flex;
+    width: 75%;
+    height: auto;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between
+}
+
+
+#certificate .certificate-container .certificate-card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: dodgerblue;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 5px;
+    box-shadow: inset 10px 10px 20px rgba(108, 48, 48, 0.3),
+        inset -10px -10px 20px rgba(0, 0, 0, 0.3),
+        0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+#certificate .certificate-container .certificate-card .certificate-card-image {
+    width: 25%;
+    height: 150px;
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    background: #000;
+}
+
+#certificate .certificate-container .certificate-card .certificate-card-image img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.certificate-card-detail {
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    padding: 0px 35px;
+    color: #FFF;
+}
+
+.certificate-card-detail span {
+    color: #FFF;
+    font-size: 25px;
+    background: linear-gradient(to bottom, #fcfdfd00 90%, #ff6600 10%);
+    display: flex;
+    width: fit-content;
+}
+
+.certificate-card-detail h2 {
+    margin: 5px 0px 10px 0px;
+}
+
+.certificate-card-detail p {
+    color: #000;
+}
+
+#certificate .certificate-container .certificate-card1,
+#certificate .certificate-container .certificate-card2 {
+    width: 45%;
+    height: 240px;
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: inset 10px 10px 20px rgba(108, 48, 48, 0.3),
+        inset -10px -10px 20px rgba(0, 0, 0, 0.3),
+        0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+}
+
+#certificate .certificate-container .certificate-card1 {
+    background: blueviolet;
+}
+
+#certificate .certificate-container .certificate-card2 {
+    background: yellow;
+}
+
+#certificate .certificate-container .certificate-card1 .certificate-card-detail,
+#certificate .certificate-container .certificate-card2 .certificate-card-detail {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* faq section  */
+
+#faq{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 80px 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+#faq .faq-title {
+    display: flex;
+    width: 100%;
+    padding: 5px 0px;
+    margin: 10px 0px 30px 0px;
+    color: #ff6600;
+    font-weight: bold;
+    font-size: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+#faq .faq-container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    padding: 20px 20px;
+}
+
+#faq .faq-container .year-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 20px;
+    margin: 10px 0px;
+    border-radius: 14px;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+}
 
 
 
@@ -1564,6 +1939,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
         border-radius: 2px;
         padding: 10px 10px;
         margin: 0px 5px;
+        width: fit-content;
     }
 
     header .header-container2 .navbar ul li:hover {
@@ -2689,20 +3065,23 @@ header .header-container1 .form-btn .btn1 .shimmer {
         padding: 20px 0px;
         margin: 20px 0px;
     }
-    #LetsUpagrade-vs-traditional .LetsUpagrade-vs-traditional-table table{
+
+    #LetsUpagrade-vs-traditional .LetsUpagrade-vs-traditional-table table {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: auto;
     }
-    #LetsUpagrade-vs-traditional .LetsUpagrade-vs-traditional-table table .title{
+
+    #LetsUpagrade-vs-traditional .LetsUpagrade-vs-traditional-table table .title {
         display: flex;
         width: 100%;
         height: auto;
         padding: 10px 0px;
         margin: 0px 0px 0px 0px;
     }
-    #LetsUpagrade-vs-traditional .LetsUpagrade-vs-traditional-table table tr th:nth-child(1){
+
+    #LetsUpagrade-vs-traditional .LetsUpagrade-vs-traditional-table table tr th:nth-child(1) {
         display: flex;
         width: 40%;
         height: auto;
@@ -2711,7 +3090,8 @@ header .header-container1 .form-btn .btn1 .shimmer {
         padding: 10px 0px;
         border-right: 1px solid lightgray;
     }
-    #LetsUpagrade-vs-traditional .LetsUpagrade-vs-traditional-table table tr th:nth-child(2){
+
+    #LetsUpagrade-vs-traditional .LetsUpagrade-vs-traditional-table table tr th:nth-child(2) {
         display: flex;
         width: 60%;
         height: auto;
@@ -2721,7 +3101,8 @@ header .header-container1 .form-btn .btn1 .shimmer {
         align-items: center;
         justify-content: center;
     }
-    #LetsUpagrade-vs-traditional .LetsUpagrade-vs-traditional-table table .row-bg{
+
+    #LetsUpagrade-vs-traditional .LetsUpagrade-vs-traditional-table table .row-bg {
         display: flex;
         width: 100%;
         height: auto;
@@ -2730,13 +3111,15 @@ header .header-container1 .form-btn .btn1 .shimmer {
         background: #393939;
         color: #FFF;
     }
-    #LetsUpagrade-vs-traditional .LetsUpagrade-vs-traditional-table table .data{
+
+    #LetsUpagrade-vs-traditional .LetsUpagrade-vs-traditional-table table .data {
         display: flex;
         width: 100%;
         height: auto;
         padding: 10px 0px;
     }
-    #LetsUpagrade-vs-traditional .LetsUpagrade-vs-traditional-table table .data td:nth-child(1){
+
+    #LetsUpagrade-vs-traditional .LetsUpagrade-vs-traditional-table table .data td:nth-child(1) {
         display: flex;
         width: 40%;
         height: auto;
@@ -2747,7 +3130,8 @@ header .header-container1 .form-btn .btn1 .shimmer {
         justify-content: flex-start;
         border-right: 1px solid lightgray;
     }
-    #LetsUpagrade-vs-traditional .LetsUpagrade-vs-traditional-table table .data td:nth-child(2){
+
+    #LetsUpagrade-vs-traditional .LetsUpagrade-vs-traditional-table table .data td:nth-child(2) {
         display: flex;
         width: 60%;
         height: auto;
@@ -2756,12 +3140,416 @@ header .header-container1 .form-btn .btn1 .shimmer {
         align-items: center;
         justify-content: flex-start;
     }
-    #LetsUpagrade-vs-traditional .LetsUpagrade-vs-traditional-table table .data td:nth-child(2) ion-icon{
+
+    #LetsUpagrade-vs-traditional .LetsUpagrade-vs-traditional-table table .data td:nth-child(2) ion-icon {
         margin-right: 10px;
         font-size: 30px;
         display: flex;
         color: #ff6600;
     }
+
+
+
+    /* Future section  */
+
+
+    #future {
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+        flex-direction: column;
+    }
+
+    #future .future-title {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        text-align: center;
+        flex-direction: column;
+        font-size: 30px;
+        padding: 10px 0px;
+        margin: 10px 0px 30px 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #future .future-title strong {
+        display: flex;
+        color: #ff6600;
+        margin-left: 20px;
+    }
+
+    #future .future-container {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #future .future-container .future-container1 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        background: #FFF;
+        border-radius: 10px;
+    }
+
+    #future .future-container .future-container2 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        background: #FFF;
+        border-radius: 10px;
+    }
+
+    #future .future-container .future-container1 .future-heading,
+    #future .future-container .future-container2 .future-heading {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 10px 0px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #future .future-container .future-container1 .future-img,
+    #future .future-container .future-container2 .future-img {
+        display: flex;
+        width: 100%;
+        height: 220px;
+        background: #000;
+        border: 1px solid red;
+    }
+
+    #future .future-container .future-container1 .future-img img,
+    #future .future-container .future-container2 .future-img img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    #future .future-container .future-container1 .future-link,
+    #future .future-container .future-container2 .future-link {
+        display: flex;
+        width: 100%;
+        padding: 10px 0px;
+        margin: 10px 0px 0px 0px;
+    }
+
+    #future .future-container .future-container1 .future-link a,
+    #future .future-container .future-container2 .future-link a {
+        color: #ff6600;
+        margin-left: 10px;
+    }
+
+
+    /* admission section css */
+
+    #admission {
+        display: flex;
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        padding: 10px 20px 0px 20px;
+
+    }
+
+    #admission .admission-container1 {
+        display: flex;
+        width: 100%;
+        padding: 5px 10px;
+        flex-direction: column;
+        margin: 10px 0px;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #admission .admission-container1 .admission-details {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    #admission .admission-container1 .admission-details .admission-heading {
+        display: flex;
+        width: fit-content;
+        padding: 5px 0px;
+        margin: 10px 0px;
+        border-radius: 4px;
+        /* background: #ff6600; */
+        color: #ff6600;
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    #admission .admission-container1 .admission-details .admission-sub-heading {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    #admission .admission-container1 .admission-button {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 0px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #admission .admission-container1 .admission-button button {
+        display: flex;
+        color: #fff;
+        background-color: #ff6600;
+        padding: 10px 30px;
+        border: none;
+        font-size: 20px;
+        outline: none;
+        border-radius: 5px;
+
+    }
+
+    #admission .admission-container1 .admission-button button:hover {
+        background-color: gray;
+    }
+
+    #admission .admission-container2 {
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding: 10px 0px;
+    }
+
+    #admission .admission-container2 ul {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0px;
+    }
+
+    #admission .admission-container2 ul li {
+        display: flex;
+        width: auto;
+        font-size: 20px;
+        height: 240px;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 10px;
+        margin: 10px 0px;
+    }
+
+    #admission .admission-container2 ul li .arrow {
+        display: flex;
+        width: auto;
+        transform: rotate(90deg);
+        align-items: center;
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    #admission .admission-container2 ul li .arrow span {
+        display: flex;
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(to right, #fff, #ff6600);
+    }
+
+    #admission .admission-container2 ul li .arrow ion-icon {
+        display: flex;
+        font-size: 30px;
+        margin-left: -20px;
+        color: #ff6600;
+    }
+
+    #admission .admission-container2 ul li ion-icon {
+        color: #ff6600;
+        font-size: 30px;
+        margin: 10px 0px 10px 0px;
+    }
+
+
+    /* certificate section  */
+
+    #certificate {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px 40px 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #certificate .certificate-title {
+        display: flex;
+        width: 100%;
+        padding: 5px 0px;
+        margin: 10px 0px 30px 0px;
+        color: #ff6600;
+        font-weight: bold;
+        font-size: 25px;
+        flex-wrap: wrap;text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #certificate .certificate-container {
+        display: flex;
+        width: 100%;
+        height: auto;
+        gap: 30px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between
+    }
+
+
+    #certificate .certificate-container .certificate-card {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: dodgerblue;
+        padding: 20px;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        box-shadow: inset 10px 10px 20px rgba(108, 48, 48, 0.3),
+            inset -10px -10px 20px rgba(0, 0, 0, 0.3),
+            0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    #certificate .certificate-container .certificate-card .certificate-card-image {
+        width: 100%;
+        height: 200px;
+        border-radius: 20px;
+        background: #000;
+    }
+
+    #certificate .certificate-container .certificate-card .certificate-card-image img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    .certificate-card-detail {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 0px 10px;
+        margin: 20px 0px;
+        color: #FFF;
+    }
+
+    .certificate-card-detail span {
+        color: #FFF;
+        font-size: 22px;
+        background: linear-gradient(to bottom, #fcfdfd00 90%, #ff6600 10%);
+        display: flex;
+        width: fit-content;
+    }
+
+    .certificate-card-detail h2 {
+        margin: 5px 0px 10px 0px;
+        font-size: 16px;
+    }
+
+    .certificate-card-detail p {
+        color: #000;
+        font-size: 14px;
+    }
+
+    #certificate .certificate-container .certificate-card1,
+    #certificate .certificate-container .certificate-card2 {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: inset 10px 10px 20px rgba(108, 48, 48, 0.3),
+            inset -10px -10px 20px rgba(0, 0, 0, 0.3),
+            0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+        margin: 5px;
+    }
+
+    #certificate .certificate-container .certificate-card1 {
+        background: blueviolet;
+    }
+
+    #certificate .certificate-container .certificate-card2 {
+        background: yellow;
+    }
+
+    #certificate .certificate-container .certificate-card1 .certificate-card-detail,
+    #certificate .certificate-container .certificate-card2 .certificate-card-detail {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+    }
+
+
+    /* faq section  */
+
+#faq{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 40px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#faq .faq-title {
+    display: flex;
+    width: 100%;
+    padding: 5px 0px;
+    margin: 10px 0px 30px 0px;
+    color: #ff6600;
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+#faq .faq-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 20px 20px;
+}
+
+#faq .faq-container .year-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 20px;
+    margin: 10px 0px;
+    border-radius: 14px;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
 
 
 
