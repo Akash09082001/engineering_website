@@ -5243,13 +5243,17 @@ header .header-container1 .form-btn .btn1 .shimmer {
         width: 100%;
         height: auto;
         font-weight: bold;
-        flex-direction: column;
+        flex-direction: row;
         line-height: 40px;
         font-size: 30px;
         text-align: center;
         align-items: center;
         justify-content: center;
     }
+    #LetsUpgrade-vs-traditional .LetsUpgrade-vs-traditional-title span{
+        margin: 0px 7px;
+    }
+
 
     #LetsUpgrade-vs-traditional .LetsUpgrade-vs-traditional-container {
         display: flex;
