@@ -13,15 +13,11 @@ body {
     flex-direction: column;
 }
 
-<<<<<<< HEAD
 .bg-grid-slate {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' stroke='rgb(15 23 42 / 0.05)'%3E%3Cpath d='M0 .5h31.5V32'/%3E%3C/svg%3E");
 }
 
 html{
-=======
-html {
->>>>>>> 16b3212c2f8b2e4dcf09eed610b20af77f34c0e6
     scroll-behavior: smooth;
 }
 
@@ -7466,7 +7462,6 @@ header .header-container1 .form-btn .btn1 .shimmer {
 
     /* faq section  */
 
-<<<<<<< HEAD
 #faq{
     display: flex;
     width: 100%;
@@ -7476,17 +7471,6 @@ header .header-container1 .form-btn .btn1 .shimmer {
     align-items: center;
     justify-content: center;
 }
-=======
-    #faq {
-        display: flex;
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        padding: 40px 20px;
-        align-items: center;
-        justify-content: center;
-    }
->>>>>>> 16b3212c2f8b2e4dcf09eed610b20af77f34c0e6
 
     #faq .faq-title {
         display: flex;
