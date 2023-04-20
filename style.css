@@ -3306,7 +3306,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     #LetsUpgrade-vs-traditional {
         display: flex;
         width: 100%;
-        height: auto;
+        height: 100vh;
         padding: 20px 100px;
         flex-direction: column;
         align-items: center;
@@ -5245,11 +5245,11 @@ header .header-container1 .form-btn .btn1 .shimmer {
     #LetsUpgrade-vs-traditional {
         display: flex;
         width: 100%;
-        height: auto;
+        height: 100vh;
         padding: 20px 80px;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     #LetsUpgrade-vs-traditional .LetsUpgrade-vs-traditional-title {
@@ -5272,7 +5272,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     #LetsUpgrade-vs-traditional .LetsUpgrade-vs-traditional-container {
         display: flex;
         width: 100%;
-        height: auto;
+        height: 100%;
         padding: 0px 0px;
         align-items: center;
         justify-content: space-around;
