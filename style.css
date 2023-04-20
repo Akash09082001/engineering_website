@@ -17,6 +17,11 @@ body {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' stroke='rgb(15 23 42 / 0.05)'%3E%3Cpath d='M0 .5h31.5V32'/%3E%3C/svg%3E");
 }
 
+.bg-w{
+    background: #FFF;
+}
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -592,15 +597,23 @@ header .header-container1 .form-btn .btn1 .shimmer {
 
 #placement marquee ul li {
     display: flex;
+    padding: 10px;
     margin: 0px 10px;
     border-radius: 5px;
-    padding: 10px 20px;
+    height: 40px;
+    width: 100px;
     letter-spacing: 1px;
     font-weight: 600;
     color: #ff6600;
     border: 1px solid grey;
     cursor: pointer;
     background: #FFF;
+}
+#placement marquee ul li img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 
@@ -709,7 +722,6 @@ header .header-container1 .form-btn .btn1 .shimmer {
 
 #overview .overview-container .overview-box {
     padding: 20px 30px;
-    background: rgba(255, 255, 255, 0.4);
     border: 1px solid #000;
     box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
@@ -1455,6 +1467,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     height: auto;
     padding: 20px 30px;
     border-radius: 5px;
+    background: #FFF;
     border: 1px solid #000;
 }
 
@@ -1504,6 +1517,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     height: auto;
     padding: 40px 30px;
     border-radius: 5px;
+    background: #FFF;
     border: 3px solid #ff6600;
 }
 
@@ -7033,7 +7047,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
         border: 1px solid #ff6600;
         border-radius: 5px;
         padding: 20px 0px;
-        margin: 20px 0px;
+        margin: 0px 0px;
     }
 
     #LetsUpgrade-vs-traditional .LetsUpgrade-vs-traditional-table table {
