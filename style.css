@@ -17,11 +17,11 @@ body {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' stroke='rgb(15 23 42 / 0.05)'%3E%3Cpath d='M0 .5h31.5V32'/%3E%3C/svg%3E");
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.box-radius{
+.box-radius {
     border-radius: 5px;
 }
 
@@ -55,6 +55,13 @@ header .header-container1 .header-logo {
     display: flex;
     font-weight: bold;
     font-size: 20px;
+    height: 50px;
+}
+
+header .header-container1 .header-logo img {
+    object-fit: contain;
+    height: auto;
+    width: auto;
 }
 
 header .header-container1 .header-menu {
@@ -68,34 +75,24 @@ header .header-container2 {
 }
 
 header .header-container2 .navbar {
-    /* display: flex;
     width: 100%;
-    overflow-y: none;
-    align-items: center;
-    justify-content: center; */
-        width: 100%;
-        max-width: 1000px;
-        margin: 0 auto;
-        text-align: center;
-        justify-content: center;
-        padding: 10px;
-        display: flex;
-        height: 55px;
-        background: #fff;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    display: flex;
+    height: 55px;
+    background: #fff;
 }
 
 
 header .header-container2 .navbar ul {
     display: flex;
-    /* width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    margin: 5px 0px; */
-    
 }
 
 header .header-container2 .navbar ul li {
-    display: flex; 
+    display: flex;
     padding: 10px 10px;
     margin: 0px 5px;
     cursor: pointer;
@@ -104,21 +101,14 @@ header .header-container2 .navbar ul li {
 }
 
 header .header-container2 .navbar ul li.active {
-    /* background: #ff66006d; */
     border-bottom: 2px solid #ff6600;
     transition: 0.3s;
 }
 
 header .header-container2 .navbar ul li a {
-    /* display: flex;
+    display: flex;
     text-decoration: none;
-    border-radius: 4px;
     color: #191919;
-    white-space: nowrap; */
-            display: flex;
-        text-decoration: none;
-        /* border-radius: 5px; */
-        color: #191919;
 }
 
 
@@ -369,6 +359,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     border-radius: 5px;
     align-items: center;
     justify-content: space-between;
+    background: #fff;
 }
 
 #curriculum .curriculum-box .curriculum-container .curriculum-container1 {
@@ -454,6 +445,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     margin: 10px 0px;
     flex-direction: column;
     width: 100%;
+    background: #fff;
 }
 
 
@@ -667,7 +659,8 @@ header .header-container1 .form-btn .btn1 .shimmer {
     margin: 10px 0px;
 
 }
-#overview .overview-card .overview-course img{
+
+#overview .overview-card .overview-course img {
     display: flex;
     width: 100%;
     height: 100%;
@@ -719,6 +712,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     cursor: pointer;
     flex-direction: column;
     width: 29%;
+    background: #fff;
 }
 
 #overview .overview-container .overview-box .overview-box-question {
@@ -855,14 +849,17 @@ header .header-container1 .form-btn .btn1 .shimmer {
     justify-content: space-between;
 
 }
-#faculty .faculty-container::-webkit-scrollbar{
+
+#faculty .faculty-container::-webkit-scrollbar {
     height: 5px;
 }
-#faculty .faculty-container::-webkit-scrollbar-track{
+
+#faculty .faculty-container::-webkit-scrollbar-track {
     background: #888;
     border-radius: 5px;
 }
-#faculty .faculty-container::-webkit-scrollbar-thumb{
+
+#faculty .faculty-container::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background: #ff6600;
 }
@@ -888,6 +885,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: #fff;
 }
 
 #faculty .faculty-container ul li .faculty-img {
@@ -978,14 +976,16 @@ header .header-container1 .form-btn .btn1 .shimmer {
 
 }
 
-#news .news-container::-webkit-scrollbar{
+#news .news-container::-webkit-scrollbar {
     height: 5px;
 }
-#news .news-container::-webkit-scrollbar-track{
+
+#news .news-container::-webkit-scrollbar-track {
     background: #888;
     border-radius: 5px;
 }
-#news .news-container::-webkit-scrollbar-thumb{
+
+#news .news-container::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background: #ff6600;
 }
@@ -1009,6 +1009,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: #fff;
 }
 
 #news .news-container ul li .news-container1 {
@@ -1112,14 +1113,17 @@ header .header-container1 .form-btn .btn1 .shimmer {
     justify-content: space-between;
 
 }
-#instructors .instructors-container .instructor-container::-webkit-scrollbar{
+
+#instructors .instructors-container .instructor-container::-webkit-scrollbar {
     height: 5px;
 }
-#instructors .instructors-container .instructor-container::-webkit-scrollbar-track{
+
+#instructors .instructors-container .instructor-container::-webkit-scrollbar-track {
     background: #888;
     border-radius: 5px;
 }
-#instructors .instructors-container .instructor-container::-webkit-scrollbar-thumb{
+
+#instructors .instructors-container .instructor-container::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background: #ff6600;
 }
@@ -1128,7 +1132,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
 #instructors .instructors-container .instructor-container ul {
     display: flex;
     height: auto;
-    gap: 0px 20px;
+    gap: 0px 30px;
     cursor: pointer;
     align-items: center;
     justify-content: space-around;
@@ -1143,6 +1147,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     border-radius: 5px;
     border: 1px solid grey;
     flex-direction: column;
+    background: #fff;
 }
 
 #instructors .instructors-container .instructor-container ul li .instructor1-title {
@@ -1163,6 +1168,14 @@ header .header-container1 .form-btn .btn1 .shimmer {
     font-size: 20px;
 }
 
+#instructors .instructors-container .instructor-container ul li .instructor1-title span i {
+    display: flex;
+    margin: 0px 10px;
+    font-size: 25px;
+    color: dodgerblue;
+}
+
+
 #instructors .instructors-container .instructor-container ul li .instructor1-title span strong {
     display: flex;
     margin-left: 10px;
@@ -1176,7 +1189,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     width: 100%;
     padding: 10px 20px;
     color: #fff;
-    background: linear-gradient(to right, #000, #fff);
+    background: linear-gradient(to right, #ff6600, #fff);
 }
 
 #instructors .instructors-container .instructor-container ul li .instructor-desc span {
@@ -1188,7 +1201,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     display: flex;
     width: 40%;
     font-size: 20px;
-    color: #ff6600;
+    color: #000;
     line-height: 25px;
 }
 
@@ -1197,10 +1210,9 @@ header .header-container1 .form-btn .btn1 .shimmer {
     display: flex;
 }
 
-#instructors .instructors-container .instructor-container ul li .instructor-linkedin a {
-    color: #ff6600;
-    font-weight: bold;
-    font-size: 18px;
+#instructors .instructors-container .instructor-container ul li .instructor-linkedin i {
+    color: dodgerblue;
+    font-size: 25px;
 }
 
 #instructors .instructors-container .instructor-container ul li .instructor-img {
@@ -1220,7 +1232,6 @@ header .header-container1 .form-btn .btn1 .shimmer {
     height: 100%;
     border-bottom-right-radius: 10px;
 }
-
 
 #instructors .mentors-container {
     display: flex;
@@ -1253,14 +1264,16 @@ header .header-container1 .form-btn .btn1 .shimmer {
 
 }
 
-#instructors .mentors-container .mentor-container::-webkit-scrollbar{
+#instructors .mentors-container .mentor-container::-webkit-scrollbar {
     height: 5px;
 }
-#instructors .mentors-container .mentor-container::-webkit-scrollbar-track{
+
+#instructors .mentors-container .mentor-container::-webkit-scrollbar-track {
     background: #888;
     border-radius: 5px;
 }
-#instructors .mentors-container .mentor-container::-webkit-scrollbar-thumb{
+
+#instructors .mentors-container .mentor-container::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background: #ff6600;
 }
@@ -1270,7 +1283,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
 #instructors .mentors-container .mentor-container ul {
     display: flex;
     height: auto;
-    gap: 0px 20px;
+    gap: 0px 30px;
     cursor: pointer;
     align-items: center;
     justify-content: space-around;
@@ -1284,6 +1297,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     border-radius: 5px;
     border: 1px solid grey;
     flex-direction: column;
+    background: #fff;
 }
 
 #instructors .mentors-container .mentor-container ul li .mentor-profile {
@@ -1299,6 +1313,13 @@ header .header-container1 .form-btn .btn1 .shimmer {
     width: 75%;
     flex-direction: column;
     padding: 0px 10px;
+}
+
+#instructors .mentors-container .mentor-container ul li .mentor-profile .mentor1-title i {
+    display: flex;
+    margin: 0px 1px;
+    font-size: 25px;
+    color: dodgerblue;
 }
 
 #instructors .mentors-container .mentor-container ul li .mentor-profile .mentor1-title h3 {
@@ -1320,7 +1341,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     width: 100%;
     padding: 10px 20px;
     color: #fff;
-    background: linear-gradient(to right, #000, #fff);
+    background: linear-gradient(to right, #ff6600, #fff);
 }
 
 #instructors .mentors-container .mentor-container ul li .mentor-desc span {
@@ -1331,13 +1352,18 @@ header .header-container1 .form-btn .btn1 .shimmer {
 #instructors .mentors-container .mentor-container ul li .mentor-desc h4 {
     display: flex;
     font-size: 22px;
-    color: #ff6600;
+    color: #000;
     line-height: 30=6px;
 }
 
 #instructors .mentors-container .mentor-container ul li .mentor-linkedin {
     padding: 10px 20px 5px 20px;
     display: flex;
+}
+
+#instructors .mentors-container .mentor-container ul li .mentor-linkedin i {
+    color: dodgerblue;
+    font-size: 25px;
 }
 
 #instructors .mentors-container .mentor-container ul li .mentor-linkedin a {
@@ -1392,7 +1418,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
 
 #LetsUpgrade-vs-traditional .LetsUpgrade-vs-traditional-container {
     display: flex;
-    width: 70%;
+    width: 80%;
     height: 100%;
     padding: 0px 40px;
     align-items: center;
@@ -1440,11 +1466,12 @@ header .header-container1 .form-btn .btn1 .shimmer {
 #LetsUpgrade-vs-traditional .LetsUpgrade-vs-traditional-container .traditional-education {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 70%;
     height: auto;
     padding: 20px 30px;
     border-radius: 5px;
     border: 1px solid #000;
+    background: #fff;
 }
 
 #LetsUpgrade-vs-traditional .LetsUpgrade-vs-traditional-container .traditional-education .traditional-title {
@@ -1489,11 +1516,12 @@ header .header-container1 .form-btn .btn1 .shimmer {
 #LetsUpgrade-vs-traditional .LetsUpgrade-vs-traditional-container .letsupgrade-Advantage {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 80%;
     height: auto;
     padding: 40px 30px;
     border-radius: 5px;
     border: 3px solid #ff6600;
+    background: #fff;
 }
 
 #LetsUpgrade-vs-traditional .LetsUpgrade-vs-traditional-container .letsupgrade-Advantage .letsupgrade-title {
@@ -1650,6 +1678,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     flex-direction: column;
     padding: 10px 120px 30px 120px;
     /* 4background: rgb(255,255,255); */
+    background-image: url(images/bg1.png);
 }
 
 #admission .admission-container1 {
@@ -1746,7 +1775,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     display: flex;
     width: 100px;
     height: 4px;
-    background: linear-gradient(to right, #fff, #ff6600);
+    background: linear-gradient(to right, transparent, #ff6600);
 }
 
 #admission .admission-container2 ul li .arrow ion-icon {
@@ -1880,7 +1909,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
 
 /* faq section  */
 
-#faq{
+#faq {
     display: flex;
     width: 100%;
     height: auto;
@@ -1902,7 +1931,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     justify-content: center;
 }
 
-#faq .faq-container{
+#faq .faq-container {
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -1910,7 +1939,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     padding: 20px 20px;
 }
 
-#faq .faq-container .year-box{
+#faq .faq-container .year-box {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1918,6 +1947,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     margin: 10px 0px;
     border-radius: 5px;
     border: 1px solid #000;
+    background: #fff;
 }
 
 
@@ -1991,11 +2021,6 @@ header .header-container1 .form-btn .btn1 .shimmer {
     }
 
     header .header-container2 .navbar {
-        /* display: flex;
-        width: 100%;
-        overflow-y: scroll;
-        align-items: center;
-        justify-content: space-between; */
         width: 100%;
         max-width: 1000px;
         margin: 0 auto;
@@ -2017,16 +2042,11 @@ header .header-container1 .form-btn .btn1 .shimmer {
         align-items: flex-start;
         justify-content: flex-start;
         margin: 5px 0px;
-
     }
 
+
+
     header .header-container2 .navbar ul li {
-        /* display: flex;
-        border-radius: 5px;
-        padding: 10px 10px;
-        margin: 0px 5px;
-        width: fit-content;
-        border-bottom: 2px solid transparent; */
         display: flex;
         white-space: nowrap;
         border-bottom: 2px solid transparent;
@@ -2034,14 +2054,13 @@ header .header-container1 .form-btn .btn1 .shimmer {
     }
 
     header .header-container2 .navbar ul li.active {
-        border-bottom: 2px solid #ff6600 ;
+        border-bottom: 2px solid #ff6600;
         transition: 0.3s;
     }
 
     header .header-container2 .navbar ul li a {
         display: flex;
         text-decoration: none;
-        /* border-radius: 5px; */
         color: #191919;
     }
 
@@ -2266,6 +2285,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
         padding: 10px 10px;
         border: 1px solid #000;
         border-radius: 5px;
+        background: #fff;
     }
 
     #curriculum .curriculum-box .curriculum-container .curriculum-container1 {
@@ -2461,7 +2481,8 @@ header .header-container1 .form-btn .btn1 .shimmer {
         margin: 0px 0px 10px 0px;
         filter: hue-rotate(100%);
     }
-    #overview .overview-card .overview-logo img{
+
+    #overview .overview-card .overview-logo img {
         display: flex;
         width: 100%;
         height: 100%;
@@ -2520,6 +2541,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
         margin: 0px 0px;
         flex-direction: column;
         width: 100%;
+        background: #fff;
     }
 
     #overview .overview-container .overview-box .overview-box-question {
@@ -2882,7 +2904,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     #instructors .instructors-container .instructor-container ul {
         display: flex;
         height: auto;
-        gap: 0px 10px;
+        gap: 0px 20px;
         align-items: center;
         justify-content: space-around;
     }
@@ -2929,7 +2951,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
         width: 100%;
         padding: 10px 20px;
         color: #fff;
-        background: linear-gradient(to right, #000, #fff);
+        background: linear-gradient(to right, #ff6600, #fff);
     }
 
     #instructors .instructors-container .instructor-container ul li .instructor-desc span {
@@ -2941,7 +2963,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
         display: flex;
         width: 40%;
         font-size: 22px;
-        color: #ff6600;
+        color: #000;
         line-height: 30=6px;
     }
 
@@ -3005,10 +3027,11 @@ header .header-container1 .form-btn .btn1 .shimmer {
         justify-content: space-between;
 
     }
+
     #instructors .mentors-container .mentor-container ul {
         display: flex;
         height: auto;
-        gap: 0px 10px;
+        gap: 0px 20px;
         align-items: center;
         justify-content: space-around;
     }
@@ -3057,7 +3080,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
         width: 100%;
         padding: 10px 20px;
         color: #fff;
-        background: linear-gradient(to right, #000, #fff);
+        background: linear-gradient(to right, #ff6600, #fff);
     }
 
     #instructors .mentors-container .mentor-container ul li .mentor-desc span {
@@ -3068,7 +3091,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     #instructors .mentors-container .mentor-container ul li .mentor-desc h4 {
         display: flex;
         font-size: 22px;
-        color: #ff6600;
+        color: #000;
         line-height: 30=6px;
     }
 
@@ -3143,6 +3166,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
         border-radius: 5px;
         padding: 20px 0px;
         margin: 20px 0px;
+        background: #fff;
     }
 
     #LetsUpgrade-vs-traditional .LetsUpgrade-vs-traditional-table table {
@@ -3443,7 +3467,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
         display: flex;
         width: 80px;
         height: 4px;
-        background: linear-gradient(to right, #fff, #ff6600);
+        background: linear-gradient(to right, transparent, #ff6600);
     }
 
     #admission .admission-container2 ul li .arrow ion-icon {
@@ -3478,7 +3502,8 @@ header .header-container1 .form-btn .btn1 .shimmer {
         color: #ff6600;
         font-weight: bold;
         font-size: 25px;
-        flex-wrap: wrap;text-align: center;
+        flex-wrap: wrap;
+        text-align: center;
         align-items: center;
         justify-content: center;
     }
@@ -3575,44 +3600,45 @@ header .header-container1 .form-btn .btn1 .shimmer {
 
     /* faq section  */
 
-#faq{
-    display: flex;
-    width: 100%;
-    height: fit-content;
-    flex-direction: column;
-    padding: 40px 20px;
-    align-items: center;
-    justify-content: center;
-}
+    #faq {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        padding: 40px 20px;
+        align-items: center;
+        justify-content: center;
+    }
 
-#faq .faq-title {
-    display: flex;
-    width: 100%;
-    padding: 5px 0px;
-    margin: 10px 0px 30px 0px;
-    color: #ff6600;
-    font-weight: bold;
-    text-align: center;
-    font-size: 35px;
-    align-items: center;
-    justify-content: center;
-}
+    #faq .faq-title {
+        display: flex;
+        width: 100%;
+        padding: 5px 0px;
+        margin: 10px 0px 30px 0px;
+        color: #ff6600;
+        font-weight: bold;
+        text-align: center;
+        font-size: 35px;
+        align-items: center;
+        justify-content: center;
+    }
 
-#faq .faq-container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding: 20px 20px;
-}
+    #faq .faq-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 20px 20px;
+    }
 
-#faq .faq-container .year-box{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 15px 20px;
-    margin: 10px 0px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
-}
+    #faq .faq-container .year-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 15px 20px;
+        margin: 10px 0px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+        background: #fff;
+    }
 }
