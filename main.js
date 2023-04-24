@@ -1,18 +1,19 @@
-// for vavbar
 
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("header .header-container2 .navbar ul li");
 const navbar = document.querySelector("header .header-container2 .navbar");
+const firstHeader = document.querySelector("header .header-container1");
 
 window.onscroll = () => {
   var current = "";
 
   sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    if (scrollY >= sectionTop - 60) {
-      current = section.getAttribute("id"); }
+    const sectionTop = section.offsetTop - firstHeader.offsetHeight;
+    const sectionHeight = section.clientHeight;
+    if (scrollY >= sectionTop - 60 && scrollY < sectionTop + sectionHeight - 60) {
+      current = section.getAttribute("id");
+    }
   });
-  
 
   navLi.forEach((li) => {
     li.classList.remove("active");
@@ -34,6 +35,41 @@ window.onscroll = () => {
     }
   });
 };
+
+
+
+// Get all the navigation links
+const navLinks = document.querySelectorAll('.navbar a');
+
+// Loop through the links and add an event listener to each link
+navLinks.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    // Prevent the default behavior of the link
+    event.preventDefault();
+
+    // Get the ID of the section to which the link points
+    const sectionId = link.getAttribute('href');
+
+    // Get the distance from the top of the page to the section
+    const sectionTop = document.querySelector(sectionId).offsetTop;
+
+    // Scroll to the section with some margin
+    window.scrollTo({
+      top: sectionTop - 120,
+      behavior: 'smooth'
+    });
+
+    // Remove the 'active' class from all the links
+    navLinks.forEach((link) => {
+      link.classList.remove('active');
+    });
+
+    // Add the 'active' class to the clicked link
+    link.classList.add('active');
+  });
+});
+
+
 
 
 let faq = document.getElementsByClassName("year-box-question");

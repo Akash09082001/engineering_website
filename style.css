@@ -63,7 +63,14 @@ header .header-container1 .header-logo {
     display: flex;
     font-weight: bold;
     font-size: 20px;
+    height: 50px;
 }
+header .header-container1 .header-logo img{
+    object-fit: contain;
+    height: auto;
+    width: auto;
+}
+
 
 header .header-container1 .header-menu {
     display: none;
@@ -169,7 +176,7 @@ header .header-container1 .form-btn .btn1:hover .shimmer {
 header .header-container1 .form-btn .btn1 .shimmer {
     position: absolute;
     display: block;
-    background: rgba(255, 255, 255, 0.7);
+    background: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.7), transparent);
     width: 350px;
     height: 100px;
     transform: translate3d(-120%, -50px, 0) rotate3d(0, 0, 1, 45deg);
@@ -1203,11 +1210,11 @@ header .header-container1 .form-btn .btn1 .shimmer {
     font-size: 20px;
 }
 
-#instructors .instructors-container .instructor-container ul li .instructor1-title span strong {
+#instructors .instructors-container .instructor-container ul li .instructor1-title span i {
     display: flex;
     margin-left: 10px;
-    color: #ff6600;
-    font-size: 18px;
+    color: dodgerblue;
+    font-size: 25px;
 }
 
 #instructors .instructors-container .instructor-container ul li .instructor-desc {
@@ -1237,10 +1244,11 @@ header .header-container1 .form-btn .btn1 .shimmer {
     display: flex;
 }
 
-#instructors .instructors-container .instructor-container ul li .instructor-linkedin a {
-    color: #ff6600;
-    font-weight: bold;
-    font-size: 18px;
+#instructors .instructors-container .instructor-container ul li .instructor-linkedin i {
+    color: dodgerblue;
+    font-size: 25px;
+    display: flex;
+    margin: 0px 10px;
 }
 
 #instructors .instructors-container .instructor-container ul li .instructor-img {
@@ -1356,11 +1364,11 @@ header .header-container1 .form-btn .btn1 .shimmer {
     font-size: 20px;
 }
 
-#instructors .mentors-container .mentor-container ul li .mentor-profile .mentor1-title strong {
+#instructors .mentors-container .mentor-container ul li .mentor-profile .mentor1-title i {
     display: flex;
     margin-left: 10px;
-    color: #ff6600;
-    font-size: 18px;
+    color: dodgerblue;
+    font-size: 25px;
 }
 
 #instructors .mentors-container .mentor-container ul li .mentor-desc {
@@ -1389,10 +1397,10 @@ header .header-container1 .form-btn .btn1 .shimmer {
     display: flex;
 }
 
-#instructors .mentors-container .mentor-container ul li .mentor-linkedin a {
-    color: #ff6600;
-    font-weight: bold;
-    font-size: 18px;
+#instructors .mentors-container .mentor-container ul li .mentor-linkedin i {
+    color: dodgerblue;
+    display: flex;
+    font-size: 25px;
 }
 
 #instructors .mentors-container .mentor-container ul li .mentor-profile .mentor-img {
