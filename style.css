@@ -17,7 +17,7 @@ body {
 }
 
 .bg-grid-slate {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' stroke='rgb(15 23 42 / 0.05)'%3E%3Cpath d='M0 .5h31.5V32'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' stroke='rgb(15 23 42 / 0.03)'%3E%3Cpath d='M0 .5h31.5V32'/%3E%3C/svg%3E");
 }
 
 .bg-w {
@@ -47,8 +47,9 @@ header {
     height: auto;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
-    background: #FFF;
-    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.15);
 }
 
 header .header-container1 {
@@ -65,7 +66,8 @@ header .header-container1 .header-logo {
     font-size: 20px;
     height: 50px;
 }
-header .header-container1 .header-logo img{
+
+header .header-container1 .header-logo img {
     object-fit: contain;
     height: auto;
     width: auto;
@@ -79,7 +81,7 @@ header .header-container1 .header-menu {
 header .header-container2 {
     display: flex;
     width: 100%;
-    padding: 0px 120px;
+    padding: 10px 120px;
 }
 
 header .header-container2 .navbar {
@@ -89,14 +91,14 @@ header .header-container2 .navbar {
     align-items: center;
     justify-content: center; */
     width: 100%;
-    max-width: 1000px;
     margin: 0 auto;
     text-align: center;
     justify-content: center;
     padding: 10px;
     display: flex;
-    height: 55px;
-    background: #fff;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -114,13 +116,13 @@ header .header-container2 .navbar ul li {
     padding: 10px 10px;
     margin: 0px 5px;
     cursor: pointer;
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
     white-space: nowrap;
 }
 
 header .header-container2 .navbar ul li.active {
     /* background: #ff66006d; */
-    border-bottom: 2px solid #ff6600;
+    border-bottom: 3px solid #ff6600;
     transition: 0.3s;
 }
 
@@ -578,6 +580,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     max-width: 1530px;
     padding: 40px 120px;
     height: auto;
+    background: linear-gradient(147.76deg,hsla(0,100%,99%,.31) 2%,#f60 650%)!important;
     flex-direction: column;
 }
 
@@ -683,6 +686,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     display: flex;
     width: 100%;
     height: 100%;
+    filter: invert(1);
 }
 
 
@@ -927,6 +931,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
     width: 100%;
     height: 200px;
     border-radius: 5px;
+    background: radial-gradient(hsla(0, 0%, 99%, 0.812),rgba(255, 102, 0, 0.127))!important;
 }
 
 #faculty .faculty-container ul li .faculty-img img {
@@ -1614,9 +1619,11 @@ header .header-container1 .form-btn .btn1 .shimmer {
     display: flex;
     width: 100%;
     height: auto;
+    background: url(images/grey\ grain.jpeg);
     max-width: 1530px;
     padding: 80px 120px;
     flex-direction: column;
+    /* background-color: #0000003c; */
 }
 
 #future .future-title {
@@ -1933,7 +1940,7 @@ header .header-container1 .form-btn .btn1 .shimmer {
 
 /* faq section  */
 
-#faq1{
+#faq1 {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1943,7 +1950,8 @@ header .header-container1 .form-btn .btn1 .shimmer {
     align-items: center;
     justify-content: center;
 }
-#faq1 .faq1-title{
+
+#faq1 .faq1-title {
     display: flex;
     width: 100%;
     font-size: 35px;
@@ -1954,13 +1962,15 @@ header .header-container1 .form-btn .btn1 .shimmer {
     align-items: center;
     justify-content: center;
 }
-#faq1 .faq1-container{
+
+#faq1 .faq1-container {
     display: flex;
     width: 70%;
     height: auto;
     flex-direction: column;
 }
-details{
+
+details {
     display: flex;
     padding: 20px;
     width: 100%;
@@ -1969,21 +1979,34 @@ details{
     background: #fff;
     border: 1px solid #0000005d;
 }
-details summary{
+
+details  summary {
     cursor: pointer;
+    display: flex;
+    width: 100%;
     font-weight: bold;
+    justify-content: space-between;
     transition: margin 150ms ease-in-out;
 }
 
-details[open] summary{
+details summary ion-icon{
+    font-size: 20px;
+    font-weight: bold;
+}
+details[open] summary {
     margin-bottom: 10px;
 }
+details[open] summary ion-icon{
+    transform: rotate(180deg);
+}
 
 
-details summary::marker{
+
+details summary::marker {
     content: '';
 }
-details p{
+
+details p {
     display: flex;
     padding: 10px 0px;
     line-height: 25px;
@@ -2010,8 +2033,6 @@ details p{
         height: auto;
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
-        background: #FFF;
-        box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
     }
 
     header .header-container1 {
@@ -2046,8 +2067,6 @@ details p{
         padding: 10px;
         display: flex;
         overflow-x: scroll;
-        height: 55px;
-        background: #fff;
     }
 
     header .header-container2 .navbar::-webkit-scrollbar {
@@ -2066,12 +2085,12 @@ details p{
     header .header-container2 .navbar ul li {
         display: flex;
         white-space: nowrap;
-        border-bottom: 2px solid transparent;
+        border-bottom: 3px solid transparent;
 
     }
 
     header .header-container2 .navbar ul li.active {
-        border-bottom: 2px solid #ff6600;
+        border-bottom: 3px solid #ff6600;
         transition: 0.3s;
     }
 
@@ -3349,7 +3368,8 @@ details p{
         align-items: center;
         justify-content: center;
     }
-    #LetsUpgrade-vs-traditional .LetsUpgrade-vs-traditional-title span{
+
+    #LetsUpgrade-vs-traditional .LetsUpgrade-vs-traditional-title span {
         margin: 0px 8px;
     }
 
@@ -3878,8 +3898,6 @@ details p{
         height: auto;
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
-        background: #FFF;
-        box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
     }
 
     header .header-container1 {
@@ -3914,8 +3932,6 @@ details p{
         padding: 10px;
         display: flex;
         overflow-x: scroll;
-        height: 55px;
-        background: #fff;
     }
 
     header .header-container2 .navbar::-webkit-scrollbar {
@@ -3934,12 +3950,12 @@ details p{
     header .header-container2 .navbar ul li {
         display: flex;
         white-space: nowrap;
-        border-bottom: 2px solid transparent;
+        border-bottom: 3px solid transparent;
 
     }
 
     header .header-container2 .navbar ul li.active {
-        border-bottom: 2px solid #ff6600;
+        border-bottom: 3px solid #ff6600;
         transition: 0.3s;
     }
 
@@ -5762,7 +5778,7 @@ details p{
 
 
     /* faq section  */
-    #faq1{
+    #faq1 {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -5772,7 +5788,8 @@ details p{
         align-items: center;
         justify-content: center;
     }
-    #faq1 .faq1-title{
+
+    #faq1 .faq1-title {
         display: flex;
         width: 100%;
         font-size: 25px;
@@ -5783,13 +5800,15 @@ details p{
         align-items: center;
         justify-content: center;
     }
-    #faq1 .faq1-container{
+
+    #faq1 .faq1-container {
         display: flex;
         width: 80%;
         height: auto;
         flex-direction: column;
     }
-    details{
+
+    details {
         display: flex;
         padding: 20px;
         width: 100%;
@@ -5798,27 +5817,29 @@ details p{
         background: #fff;
         border: 1px solid #0000005d;
     }
-    details summary{
+
+    details summary {
         cursor: pointer;
         font-weight: bold;
         transition: margin 150ms ease-in-out;
     }
-    
-    details[open] summary{
+
+    details[open] summary {
         margin-bottom: 10px;
     }
-    
-    
-    details summary::marker{
+
+
+    details summary::marker {
         content: '';
     }
-    details p{
+
+    details p {
         display: flex;
         padding: 10px 0px;
         line-height: 25px;
         color: #505050;
     }
-    
+
 
 
 }
@@ -5840,8 +5861,6 @@ details p{
         height: auto;
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
-        background: #FFF;
-        box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
     }
 
     header .header-container1 {
@@ -5876,8 +5895,6 @@ details p{
         padding: 10px;
         display: flex;
         overflow-x: scroll;
-        height: 55px;
-        background: #fff;
     }
 
     header .header-container2 .navbar::-webkit-scrollbar {
@@ -5896,12 +5913,12 @@ details p{
     header .header-container2 .navbar ul li {
         display: flex;
         white-space: nowrap;
-        border-bottom: 2px solid transparent;
+        border-bottom: 3px solid transparent;
 
     }
 
     header .header-container2 .navbar ul li.active {
-        border-bottom: 2px solid #ff6600;
+        border-bottom: 3px solid #ff6600;
         transition: 0.3s;
     }
 
@@ -7735,7 +7752,7 @@ details p{
 
 
     /* faq section  */
-    #faq1{
+    #faq1 {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -7744,7 +7761,8 @@ details p{
         align-items: center;
         justify-content: center;
     }
-    #faq1 .faq1-title{
+
+    #faq1 .faq1-title {
         display: flex;
         width: 100%;
         font-size: 25px;
@@ -7755,13 +7773,15 @@ details p{
         align-items: center;
         justify-content: center;
     }
-    #faq1 .faq1-container{
+
+    #faq1 .faq1-container {
         display: flex;
         width: 80%;
         height: auto;
         flex-direction: column;
     }
-    details{
+
+    details {
         display: flex;
         padding: 20px;
         width: 100%;
@@ -7770,27 +7790,29 @@ details p{
         background: #fff;
         border: 1px solid #0000005d;
     }
-    details summary{
+
+    details summary {
         cursor: pointer;
         font-weight: bold;
         transition: margin 150ms ease-in-out;
     }
-    
-    details[open] summary{
+
+    details[open] summary {
         margin-bottom: 10px;
     }
-    
-    
-    details summary::marker{
+
+
+    details summary::marker {
         content: '';
     }
-    details p{
+
+    details p {
         display: flex;
         padding: 10px 0px;
         line-height: 25px;
         color: #505050;
     }
-    
+
 
 }
 
@@ -7811,8 +7833,6 @@ details p{
         height: auto;
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
-        background: #FFF;
-        box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
     }
 
     header .header-container1 {
@@ -7869,8 +7889,6 @@ details p{
         padding: 10px;
         display: flex;
         overflow-x: scroll;
-        height: 55px;
-        background: #fff;
     }
 
     header .header-container2 .navbar::-webkit-scrollbar {
@@ -7889,12 +7907,12 @@ details p{
     header .header-container2 .navbar ul li {
         display: flex;
         white-space: nowrap;
-        border-bottom: 2px solid transparent;
+        border-bottom: 3px solid transparent;
 
     }
 
     header .header-container2 .navbar ul li.active {
-        border-bottom: 2px solid #ff6600;
+        border-bottom: 3px solid #ff6600;
         transition: 0.3s;
     }
 
@@ -8169,6 +8187,7 @@ details p{
         width: 100%;
         flex-direction: column;
     }
+
     #curriculum .curriculum-box #Engineering-years::-webkit-scrollbar {
         display: none;
     }
@@ -9449,7 +9468,7 @@ details p{
 
 
     /* faq section  */
-    #faq1{
+    #faq1 {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -9458,7 +9477,8 @@ details p{
         align-items: center;
         justify-content: center;
     }
-    #faq1 .faq1-title{
+
+    #faq1 .faq1-title {
         display: flex;
         width: 100%;
         font-size: 35px;
@@ -9469,13 +9489,15 @@ details p{
         align-items: center;
         justify-content: center;
     }
-    #faq1 .faq1-container{
+
+    #faq1 .faq1-container {
         display: flex;
         width: 80%;
         height: auto;
         flex-direction: column;
     }
-    details{
+
+    details {
         display: flex;
         padding: 20px;
         width: 100%;
@@ -9484,28 +9506,30 @@ details p{
         background: #fff;
         border: 1px solid #0000005d;
     }
-    details summary{
+
+    details summary {
         cursor: pointer;
         font-weight: bold;
         transition: margin 150ms ease-in-out;
     }
-    
-    details[open] summary{
+
+    details[open] summary {
         margin-bottom: 10px;
     }
-    
-    
-    details summary::marker{
+
+
+    details summary::marker {
         content: '';
     }
-    details p{
+
+    details p {
         display: flex;
         padding: 10px 0px;
         line-height: 25px;
         color: #505050;
     }
-    
-    
+
+
 
 
 
